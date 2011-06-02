@@ -1,4 +1,10 @@
 Adminbase::Application.routes.draw do
+  namespace :master do resources :specs end
+
+  namespace :master do resources :items end
+
+  namespace :master do resources :categories end
+
   root :to => "welcome#home"
   # The priority is based upon order of creation:
   # first created -> highest priority.

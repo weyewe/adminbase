@@ -6,8 +6,9 @@
     <img id="logo" src="/images/assets/logo.png" alt="logo" /> 
     <!--Menu-->
     <ul id="menu" class="clearfix">
-      <li><a class="current" href="index.html">Dashboard</a></li>
-      <li><a href="typography.html">MasterData</a></li>
+      <li><a class="" href="index.html">Dashboard</a></li>
+      <!-- <li><a href="typography.html">MasterData</a></li> -->
+      <li><%= link_to "MasterData" , master_specs_url, :class => master_class( params ) %></li>
       <li class="dropdown"> <a href="settings.html">Settings</a>
         <ul>
           <li>Section</li>
